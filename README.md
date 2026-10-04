@@ -44,3 +44,38 @@ Here, *model-as-data* refers to **model-indexed behavioral observations**. It do
 | Transfer evaluation | Apply the resulting harness to other models | Evaluate both participating models and held-out models |
 
 The comparison describes the single-model setting used by our baselines, rather than a claim that every existing RSI method uses the same design.
+
+
+## Cross-Model Evaluation Metrics
+
+We introduce two complementary metrics for evaluating a shared harness across a group of **m execution models**: **pass@m** and **pass^m**.
+
+
+This metric measures the collective task coverage of the model group. It does not imply that a deployed system can identify the successful model output without an additional selection mechanism.
+
+This metric measures the fraction of queries solved consistently across the entire model group, providing a stricter measure of shared-harness reliability.
+
+| Metric | Success criterion | Interpretation |
+|---|---|---|
+| `pass@m` | At least one model succeeds | Collective task coverage |
+| `pass^m` | Every model succeeds | Consistent success across models |
+
+Unlike conventional pass@k, where \(k\) denotes samples from a model, \(m\) here denotes **distinct execution models**. Both metrics should be reported alongside per-model performance and the exact model-group composition.
+
+
+## Citation
+
+If you use MaD-RSI in your research, please cite this repository:
+
+```bibtex
+@misc{cui2026madrsi,
+  author       = {Cui, Yu and He, Hong and Yue, Ruiqing and
+                  Pan, Sicheng and Sun, Zhuoyu and
+                  Zhang, Haibin and Zuo, Cong},
+  title        = {MaD-RSI: Model-as-Data for Recursive Self-Improvement of Agent Harnesses},
+  year         = {2026},
+  howpublished = {\url{https://github.com/cuiyu-ai/MaD-RSI}},
+  note         = {Code repository}
+}
+```
+
