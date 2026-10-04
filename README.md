@@ -1,6 +1,6 @@
 <div align="center">
 
-# MaD-RSI: Model-as-Data for Recursive Harness Improvement
+# MaD-RSI: Model-as-Data for Recursive Self-Improvement of Agent Harnesses
 
 **Yu Cui<sup>1</sup> · Hong He<sup>2</sup> · Ruiqing Yue<sup>3,4</sup> · Sicheng Pan<sup>1</sup>**  
 **Zhuoyu Sun<sup>1</sup> · Haibin Zhang<sup>5,6</sup> · Cong Zuo<sup>1</sup>**
