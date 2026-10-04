@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.secrets/
+*credentials*
+provider.json
+*.pem
+*.key
+runs/
+artifacts/
+datasets/
+*.log
+
+# Markdown: only README.md is published, other .md sources stay local
+*.md
+!README.md

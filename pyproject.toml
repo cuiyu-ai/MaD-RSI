@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mad-rsi-core"
+version = "0.1.0"
+description = "Model-as-Data evidence selection and model-group evaluation for recursive harness improvement"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+mad-rsi-metrics = "mad_rsi.metrics:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mad_rsi = ["py.typed"]

@@ -50,10 +50,9 @@ The comparison describes the single-model setting used by our baselines, rather 
 
 We introduce two complementary metrics for evaluating a shared harness across a group of **m execution models**: **pass@m** and **pass^m**.
 
+**pass@m** measures the collective task coverage of the model group. It does not imply that a deployed system can identify the successful model output without an additional selection mechanism.
 
-This metric measures the collective task coverage of the model group. It does not imply that a deployed system can identify the successful model output without an additional selection mechanism.
-
-This metric measures the fraction of queries solved consistently across the entire model group, providing a stricter measure of shared-harness reliability.
+**pass^m** measures the fraction of queries solved consistently across the entire model group, providing a stricter measure of shared-harness reliability.
 
 | Metric | Success criterion | Interpretation |
 |---|---|---|
