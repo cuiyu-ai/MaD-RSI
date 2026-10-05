@@ -28,6 +28,10 @@ We introduce **MaD-RSI**, a **Model-as-Data** framework that places the shared h
 
 MaD-RSI is compatible with both general-purpose and safety-oriented harness optimizers. We evaluate it across legal reasoning, code generation, interactive household tasks, and agent safety, measuring task performance, transfer to unseen LLMs, and optimization cost. Our results show that incorporating heterogeneous LLMs and repeated sampling into the RSI process improves cross-model transfer over single-model harness optimization.
 
+
+<img width="1168" height="627" alt="overview" src="https://github.com/user-attachments/assets/ffa36173-d0db-4884-b207-73a9764ef4ac" />
+
+
 ## Why Model-as-Data?
 
 A model is usually treated as the execution target whose harness should be improved. MaD-RSI additionally treats each model as a **behavioral probe**: its successes, failures, and intermediate actions reveal different aspects of the same task and harness.
